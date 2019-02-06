@@ -7,7 +7,7 @@ Role Variables
 --------------
 
 ```db_mongo_bind_ip:``` Set the ip that Mongo will use.  
-```db_mongo_port: 27017
+```db_mongo_port:``` Set the port that Mongo will use.
 
 Example Playbook
 ----------------
