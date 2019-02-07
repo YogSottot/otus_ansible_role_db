@@ -1,21 +1,17 @@
 ---
-#dependency:
-#  name: galaxy
+dependency:
+  name: galaxy
 driver:
-  name: vagrant
-  provider:
-    name: virtualbox
+  name: gce
 lint:
   name: yamllint
 platforms:
   - name: instance
-    box: ubuntu/xenial64
+    zone: europe-north1-b
+    machine_type: f1-micro
+    image: ubuntu-1604-lts
 provisioner:
   name: ansible
-#  inventory:
-#   host_vars:
-#    localhost:
-#     ansible_python_interpreter: /usr/bin/python3
   lint:
     name: ansible-lint
 scenario:

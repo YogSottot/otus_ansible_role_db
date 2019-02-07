@@ -1,4 +1,4 @@
-DB role for Otus
+DB role for Otus ![Build Status](https://travis-ci.com/YogSottot/otus_ansible_role_db.svg?branch=master)
 =========
 
 Install MongoDB for reddit app. Otus homework.
