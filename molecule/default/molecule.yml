@@ -9,7 +9,7 @@ platforms:
   - name: instance
     zone: europe-north1-b
     machine_type: f1-micro
-    image: ubuntu-1604-lts
+    image_family: ubuntu-1604-lts
 provisioner:
   name: ansible
   lint:
