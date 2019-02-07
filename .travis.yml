@@ -15,7 +15,7 @@ before_install:
 - mv google_compute_engine ~/.ssh/
 - chmod 0600 ~/.ssh/google_compute_engine
 install:
-- pip install molecule apache-libcloud
+- pip install molecule apache-libcloud pycrypto
 script:
 - molecule --debug create
 - molecule --debug converge
