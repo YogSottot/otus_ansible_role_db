@@ -18,11 +18,7 @@ before_install:
 install:
     - pip install molecule apache-libcloud pycrypto
 script:
-    - molecule --debug create
-    - molecule --debug converge
-    - molecule --debug verify
-after_script:
-    - molecule destroy
+    - molecule --debug test
 notifications:
     slack:
         secure: VobI+sYgsPzTICRxtsc13NkdVsKqB91qdiRfyciQukhARUpDbRbgVbjL1oY9J4Kj0fjGNjJeFJiYmvDch9vgFuToHD5HJHXzmP/xLtk0I6SikV/H2fEPTUkdUR87RBEYJRwhCiwjoVb43Fpqsi2iI6FJ4CWLaUIla2ZRMcSEUR7Spa/q4wG6W/T2iqM/yn7bRGeQrKWqcsA3HQ+cuA/YMD41XKL+cy4xjORQ9TrZXfG2bkNVcPtD64tZQkSiIR8PC+hz1FgVbTp67iMJ7EvVbPtJIYhCEmMHZN3qZ9jFOEjboIPfdNUxOWn6RzAcXueNAWzdD5rmcOL0YcNUddVORr4uPLvxrtS1zqJwkiJs4FKz+LS9yqSEFEhWwZydHzDn3XHCwVfUAMdAXqmFuJwgZs6Vt5zqAyPDri6dftOH3JquChgGWHmP5voogdFZUy9ilGK/CpyfJxKzb+TVdmLSeTOq8pz0flWebOCbYEAlocxYhvGFSYa11TbWNYeTlhMKdLwDFDqYaSSST6BNJpXtL8of5784sI8/5fY889ITrMhmFT3pxCXMqcPvbkSR1Cm3vLavyYk3K4m7MPYvJYb7K8HzT1Rl2RUNxLwmDIEbczAOvJeX9kJEQkn3sLRDt1vihMwhWoUyHWIbcYdtK24zHHciJQTXuBVILwwUFVBu5uc=
